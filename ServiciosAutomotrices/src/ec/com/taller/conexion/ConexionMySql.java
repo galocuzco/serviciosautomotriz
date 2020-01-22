@@ -13,7 +13,7 @@ import java.sql.SQLException;
  *Clase usada para conectarse con la base de datos Mysql
  * son metodos estaticos que no necesitan ser instanciados
  * cambioo 2y
- * 
+ *
  * @author Efrain
  */
 public class ConexionMySql {
@@ -23,8 +23,8 @@ public class ConexionMySql {
     public static Connection obtener() throws SQLException, ClassNotFoundException {
         if (cnx == null) {
             try {
-                Class.forName("com.mysql.jdbc.Driver");
-                cnx = DriverManager.getConnection("jdbc:mysql://64.225.39.152/dbautomotriz", "root", "softX2020.Xcuzco-*");
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                cnx = DriverManager.getConnection("jdbc:mysql://localhost/dbautomotriz", "root", "softX2020.Xcuzco-*");
             } catch (SQLException ex) {
                 throw new SQLException(ex);
             } catch (ClassNotFoundException ex) {
