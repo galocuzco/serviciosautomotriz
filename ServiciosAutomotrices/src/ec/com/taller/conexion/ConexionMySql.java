@@ -24,7 +24,7 @@ public class ConexionMySql {
         if (cnx == null) {
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                cnx = DriverManager.getConnection("jdbc:mysql://localhost/dbautomotriz", "root", "softX2020.Xcuzco-*");
+               cnx = DriverManager.getConnection("jdbc:mysql://localhost/dbautomotriz?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "softX2020.Xcuzco-*");
             } catch (SQLException ex) {
                 throw new SQLException(ex);
             } catch (ClassNotFoundException ex) {
