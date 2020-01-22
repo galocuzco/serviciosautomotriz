@@ -11,6 +11,7 @@ import java.sql.SQLException;
 
 /**
  *Clase usada para conectarse con la base de datos Mysql
+ * son metodos estaticos que no necesitan ser instanciados
  * 
  * @author Efrain
  */
