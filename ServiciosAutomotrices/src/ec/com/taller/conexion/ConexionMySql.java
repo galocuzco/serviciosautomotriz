@@ -10,7 +10,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
- *
+ *Clase usada para conectarse con la base de datos Mysql
+ * 
  * @author Efrain
  */
 public class ConexionMySql {
