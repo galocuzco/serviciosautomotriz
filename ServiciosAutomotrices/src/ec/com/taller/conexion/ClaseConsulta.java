@@ -10,5 +10,5 @@ package ec.com.taller.conexion;
  * @author Efrain
  */
 public class ClaseConsulta {
-    //for tes
+    //for test ok
 }
