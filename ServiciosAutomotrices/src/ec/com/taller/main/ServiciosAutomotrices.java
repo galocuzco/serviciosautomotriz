@@ -5,6 +5,8 @@
  */
 package ec.com.taller.main;
 
+import ec.com.taller.conexion.ConexionMySql;
+
 /**
  *
  * @author Efrain
@@ -17,6 +19,12 @@ public class ServiciosAutomotrices {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("hola mundo.. aqui inicia todo");
+        try{
+            ConexionMySql.obtener();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        System.out.println("salio conexion");
     }
     
 }
